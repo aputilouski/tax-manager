@@ -10,12 +10,12 @@ const StartMenu: React.FC<StartMenuScreenProps> = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <Layout style={styles.layout}>
         <Button //
-          onPress={() => navigation.navigate('single-tax')}
+          onPress={() => navigation.navigate('tax-manager', { title: t('single-tax'), type: 's' })}
           style={styles.button}>
           {t('single-tax')}
         </Button>
         <Button //
-          onPress={() => navigation.navigate('simplified-taxation-system')}
+          onPress={() => navigation.navigate('tax-manager', { title: t('simplified-taxation-system'), type: 'sts' })}
           style={styles.button}>
           {t('simplified-taxation-system')}
         </Button>

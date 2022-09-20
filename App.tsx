@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import translations from './src/assets/translations.json';
-import { StartMenu, SingleTax, SimplifiedTaxationSystem } from 'screens';
+import { StartMenu, TaxManager } from 'screens';
 import { RootStackParamList } from 'navigation';
 
 i18n
@@ -32,8 +32,7 @@ const App = () => {
         <NavigationContainer>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="start-menu" component={StartMenu} />
-            <Stack.Screen name="single-tax" component={SingleTax} />
-            <Stack.Screen name="simplified-taxation-system" component={SimplifiedTaxationSystem} />
+            <Stack.Screen name="tax-manager" component={TaxManager} />
           </Stack.Navigator>
         </NavigationContainer>
       </ApplicationProvider>

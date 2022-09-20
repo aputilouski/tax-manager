@@ -3,14 +3,18 @@
     "translation": {
       "start-menu": "Start Menu",
       "single-tax": "Single tax",
-      "simplified-taxation-system": "Simplified taxation system"
+      "simplified-taxation-system": "Simplified taxation system",
+      "quarter": "Quarter",
+      "year": "Year"
     }
   },
   "ru": {
     "translation": {
       "start-menu": "Начальное меню",
       "single-tax": "Единый",
-      "simplified-taxation-system": "Упрощенка"
+      "simplified-taxation-system": "Упрощенка",
+      "quarter": "Квартал",
+      "year": "Год"
     }
   }
 }
