@@ -1,0 +1,14 @@
+{
+  "en": {
+    "translation": {
+      "single-tax": "Single tax",
+      "simplified-taxation-system": "Simplified taxation system"
+    }
+  },
+  "ru": {
+    "translation": {
+      "single-tax": "Единый",
+      "simplified-taxation-system": "Упрощенка"
+    }
+  }
+}
