@@ -1,24 +1,42 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import { Button, Divider, Layout } from '@ui-kitten/components';
-import { StartMenuProps } from 'navigation';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import { Button, Layout } from '@ui-kitten/components';
+import { StartMenuScreenProps } from 'navigation';
 import { useTranslation } from 'react-i18next';
 
-const StartMenu: React.FC<StartMenuProps> = ({ navigation }) => {
+const StartMenu: React.FC<StartMenuScreenProps> = ({ navigation }) => {
   const { t } = useTranslation();
-
-  const navigateDetails = () => {
-    // navigation.navigate('Details');
-  };
-
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Button style={{ margin: 8, width: '80%' }}>{t('single-tax')}</Button>
-        <Button style={{ margin: 8, width: '80%' }}>{t('simplified-taxation-system')}</Button>
+    <SafeAreaView style={styles.container}>
+      <Layout style={styles.layout}>
+        <Button //
+          onPress={() => navigation.navigate('single-tax')}
+          style={styles.button}>
+          {t('single-tax')}
+        </Button>
+        <Button //
+          onPress={() => navigation.navigate('simplified-taxation-system')}
+          style={styles.button}>
+          {t('simplified-taxation-system')}
+        </Button>
       </Layout>
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  layout: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    margin: 8,
+    width: '80%',
+  },
+});
 
 export default StartMenu;

@@ -1,12 +1,14 @@
 {
   "en": {
     "translation": {
+      "start-menu": "Start Menu",
       "single-tax": "Single tax",
       "simplified-taxation-system": "Simplified taxation system"
     }
   },
   "ru": {
     "translation": {
+      "start-menu": "Начальное меню",
       "single-tax": "Единый",
       "simplified-taxation-system": "Упрощенка"
     }
